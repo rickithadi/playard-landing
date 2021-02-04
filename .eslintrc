@@ -1,0 +1,12 @@
+{
+    "extends": "eslint-config-airbnb",
+    "parser": "babel-eslint",
+    "rules": {
+        "quotes": [2, "double", { "avoidEscape": true }],
+         "babel/quotes": 1,
+        "import/no-unresolved": 0,
+        "react/jsx-no-target-blank": 0,
+        "jsx-a11y/anchor-is-valid": 0,
+        "react/jsx-no-comment-textnodes": 0
+    }
+}
