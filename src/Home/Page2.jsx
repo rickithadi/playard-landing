@@ -1,6 +1,4 @@
 import React from "react";
-import { OverPack } from "rc-scroll-anim";
-import QueueAnim from "rc-queue-anim";
 import { Button, Row, Col } from "antd";
 import phone1 from "./component/Frame1.png";
 import phone2 from "./component/Frame2.png";
@@ -15,14 +13,16 @@ function Page2() {
         justifyContent: "center",
       }}
     >
-      <div>
-        <img src={phone1} alt="phone" />
-      </div>
-      <div>
-        <img src={phone2} alt="phone" />
-      </div>
-      <div>
-        <img src={phone3} alt="phone" />
+      <div className="ant-row">
+        <div className="ant-col ant-col-xs-24 ant-col-xl-8">
+          <img src={phone1} alt="phone" />
+        </div>
+        <div className="ant-col ant-col-xs-24 ant-col-xl-8">
+          <img src={phone2} alt="phone" />
+        </div>
+        <div className="ant-col ant-col-xs-24 ant-col-xl-8">
+          <img src={phone3} alt="phone" />
+        </div>
       </div>
     </div>
   );
