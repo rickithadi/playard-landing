@@ -13,17 +13,26 @@ function Page2() {
         justifyContent: "center",
       }}
     >
-      <div className="ant-row">
-        <div className="ant-col ant-col-xs-24 ant-col-xl-8">
-          <img src={phone1} alt="phone" />
-        </div>
-        <div className="ant-col ant-col-xs-24 ant-col-xl-8">
-          <img src={phone2} alt="phone" />
-        </div>
-        <div className="ant-col ant-col-xs-24 ant-col-xl-8">
-          <img src={phone3} alt="phone" />
-        </div>
-      </div>
+      <Row>
+        <Col lg={8} sm={24} xs={24} style={{ textAlign: "center" }}>
+          <img
+            src={phone1}
+            style={{ width: "100%", height: "100%", padding: "20px" }}
+          />
+        </Col>
+        <Col lg={8} sm={24} xs={24} style={{ textAlign: "center" }}>
+          <img
+            src={phone2}
+            style={{ width: "100%", height: "100%", padding: "20px" }}
+          />
+        </Col>
+        <Col lg={8} sm={24} xs={24} style={{ textAlign: "center" }}>
+          <img
+            src={phone3}
+            style={{ width: "100%", height: "100%", padding: "20px" }}
+          />
+        </Col>
+      </Row>
     </div>
   );
 }
