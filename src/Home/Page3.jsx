@@ -1,12 +1,11 @@
-import React from 'react';
-import { OverPack } from 'rc-scroll-anim';
-import QueueAnim from 'rc-queue-anim';
-import { Button } from 'antd';
+import React from "react";
+import { OverPack } from "rc-scroll-anim";
+import QueueAnim from "rc-queue-anim";
+import { Button } from "antd";
 
 function Page2() {
   return (
     <div className="banner-wrapper">
-
       <h1 key="h1">Playard</h1>
       <p key="content">Where You Find Sports Kakis</p>
       <div key="button" className="button-wrapper">
@@ -17,14 +16,13 @@ function Page2() {
         >
           <Button disabled type="primary">
             Log In
-            </Button>
+          </Button>
         </a>
         <Button disabled style={{ margin: "0 16px" }} type="primary" ghost>
           Sign Up
-          </Button>
+        </Button>
       </div>
     </div>
-
   );
 }
 

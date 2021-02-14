@@ -8,16 +8,18 @@ import TweenOne from "rc-tween-one";
 const { TweenOneGroup } = TweenOne;
 
 const featuresCN = [
-
   {
     title: "Enjoy",
-    content: "Get matched with players through our proprietary matching algorithm to ensure you have a great time.",
+    content:
+      "Get matched with players through our proprietary matching algorithm to ensure you have a great time.",
     src: "https://gw.alipayobjects.com/zos/rmsportal/smwQOoxCjXVbNAKMqvWk.svg",
     color: "#2F54EB",
     shadowColor: "rgba(47,84,235,.12)",
-  }, {
+  },
+  {
     title: "Improve",
-    content: "Keep track of key statistics and gather feedback to up your game.",
+    content:
+      "Keep track of key statistics and gather feedback to up your game.",
     src: "https://gw.alipayobjects.com/zos/rmsportal/BISfzKcCNCYFmTYcUygW.svg",
     color: "#1AC44D",
     shadowColor: "rgba(26,196,77,.12)",
@@ -29,7 +31,8 @@ const featuresCN = [
     src: "https://gw.alipayobjects.com/zos/rmsportal/JsixxWSViARJnQbAAPkI.svg",
     color: "#722ED1",
     shadowColor: "rgba(114,46,209,.12)",
-  }];
+  },
+];
 
 const pointPos = [
   { x: -30, y: -10 },
@@ -127,8 +130,9 @@ class Page1 extends React.PureComponent {
             <div
               className="page1-image"
               style={{
-                boxShadow: `${isHover ? "0 12px 24px" : "0 6px 12px"} ${item.shadowColor
-                  }`,
+                boxShadow: `${isHover ? "0 12px 24px" : "0 6px 12px"} ${
+                  item.shadowColor
+                }`,
               }}
             >
               <img
@@ -160,7 +164,7 @@ class Page1 extends React.PureComponent {
     return (
       <div className="home-page page1">
         <div className="home-page-wrapper" id="page1-wrapper">
-          <h2 style={{ paddingBottom: '5vh' }}>
+          <h2 style={{ paddingBottom: "5vh" }}>
             What can <span>Playard</span> do for you{" "}
           </h2>
           {/* <div className="title-line-wrapper page1-line">

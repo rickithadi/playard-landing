@@ -11,11 +11,11 @@ function Banner(props) {
   return (
     <div className="banner-wrapper">
       {props.isMobile && (
-        <TweenOne animation={{ opacity: 1 }} className="banner-image-wrapper">
-          <div className="home-banner-image">
-            <LottieAnimation lotti={soccer} />
-          </div>
-        </TweenOne>
+        //<TweenOne animation={{ opacity: 1 }} className="banner-image-wrapper">
+        <div className="home-banner-image" style={{paddingTop:'20vh'}}>
+          <LottieAnimation lotti={soccer} />
+        </div>
+        //</TweenOne>
       )}
       <QueueAnim
         className="banner-title-wrapper"
@@ -40,7 +40,7 @@ function Banner(props) {
       </QueueAnim>
       {!props.isMobile && (
         <TweenOne animation={{ opacity: 1 }} className="banner-image-wrapper">
-          <LottieAnimation lotti={soccer} height={500} width={400} />
+          <LottieAnimation lotti={soccer} height={600} width={500} />
         </TweenOne>
       )}
     </div>
